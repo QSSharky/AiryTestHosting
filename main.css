@@ -123,11 +123,13 @@ h4 {
 #background-player {
     background: rgba(50, 50, 50, 255);
     position: relative;
-    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
     height: auto;
     border: 5px solid black;
     margin-top: 5%;
-    border-radius: 30%;
+    border-radius: 25%;
 }
 .soc-button-youtube {
     display: flex;
@@ -209,19 +211,23 @@ h4 {
 .description-border {
     background: rgba(50, 50, 50, 255);
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: -1.5%;
     margin-bottom: -1.5%;
-    width: auto;
+    width: 80%;
     height: auto;
     border: 5px solid black;
 }
 .information-about-anime {
     background: rgba(50, 50, 50, 255);
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: -1.5%;
     padding-bottom: 1.5%;
     margin-bottom: -1.5%;
-    width: auto;
+    width: 35%;
     height: auto;
     border: 5px solid black;
 }
