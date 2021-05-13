@@ -126,6 +126,7 @@ h4 {
     width: auto;
     height: auto;
     border: 5px solid black;
+    margin-top: 5%;
     border-radius: 30%;
 }
 .soc-button-youtube {
@@ -208,8 +209,8 @@ h4 {
 .description-border {
     background: rgba(50, 50, 50, 255);
     position: relative;
-    margin-top: -2%;
-    margin-bottom: 2%;
+    margin-top: -1.5%;
+    margin-bottom: -1.5%;
     width: auto;
     height: auto;
     border: 5px solid black;
@@ -217,9 +218,9 @@ h4 {
 .information-about-anime {
     background: rgba(50, 50, 50, 255);
     position: relative;
-    margin-top: -2%;
+    margin-top: -1.5%;
     padding-bottom: 1.5%;
-    margin-bottom: -2%;
+    margin-bottom: -1.5%;
     width: auto;
     height: auto;
     border: 5px solid black;
