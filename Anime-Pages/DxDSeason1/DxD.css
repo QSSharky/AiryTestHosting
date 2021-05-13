@@ -110,35 +110,22 @@ h4 {
     border-radius: 1em;
     cursor: pointer;
 }
-.animeposter2 {
-    margin: auto;
-    border: white;
-    border-radius: 1em;
-    cursor: pointer;
-}
 .animeposters {
     display: flex;
 }
-.posternames {
-    display: flex;
-}
-.posternames2 {
-    display: flex;
-    margin: auto;
-}
 .anime_name {
     color:burlywood;
+    display: flex;
+    justify-content: center;
     font-size: 125%;
     text-shadow: 1px 1px 1px black;
-    margin: auto;
-    padding-left: 2.5%;
 }
 #background-player {
     background: rgba(50, 50, 50, 255);
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
+    width: auto;
     height: auto;
     border: 5px solid black;
     margin-top: 5%;
@@ -194,8 +181,9 @@ h4 {
 .anime_short_description {
     text-align: center;
     width: 15%;
-    margin-left: auto;
-    margin-right: 18%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
     color: white;
 }
 .episode_name {
