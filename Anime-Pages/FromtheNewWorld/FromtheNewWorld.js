@@ -1,10 +1,13 @@
 function changingColorOfButtons() {
+    //Кнопка назад
+    if(this.id === 'main-button-opacity') {
+        window.location = '../../index.html'
+    }
     //Смена серии
     let iframe = document.querySelector('iframe')
     let episodeName = document.getElementById('ShinsekaiYoriEpisodeName')
     let episodeOutDate = document.getElementById('ShinsekaiYoriEpisodeOutDate')
     //Кнопки
-    if(true) {
     if(this.id === 'btn1') {
         iframe.src = 'https://www.myvi.top/embed/haot3rf3kqmwjezdkzjiterq7w'
         episodeName.textContent = 'Название серии: Season of Fallen Leaves'
@@ -129,7 +132,6 @@ function changingColorOfButtons() {
         iframe.src = 'https://www.myvi.top/embed/xs8ybw8fjiewdejrftp9qp5rpo'
         episodeName.textContent = 'Название серии: From the New World'
         episodeOutDate.textContent = 'Дата выхода: 23.03.2013'
-    }
 }
 
     //Сброс цвета на #2C2F33

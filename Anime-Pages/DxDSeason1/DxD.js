@@ -1,12 +1,15 @@
 let lol = confirm('Внимание, это аниме является 18+! Если вы хотите продолжить, нажмите OK!')
 if(lol) {
 function changingColorOfButtons() {
+    //Кнопка назад
+    if(this.id === 'main-button-opacity') {
+        window.location = '../../index.html'
+    }
     //Смена серии
     let iframe = document.querySelector('iframe')
     let episodeName = document.getElementById('HighSchoolDxDEpisodeName')
     let episodeOutDate = document.getElementById('HighSchoolDxDEpisodeOutDate')
     //Кнопки
-    if(true) {
     if(this.id === 'btn1') {
         iframe.src = 'https://video.sibnet.ru/shell.php?videoid=4047512'
         episodeName.textContent = 'Название серии: I Got a Girlfriend!'
@@ -66,7 +69,6 @@ function changingColorOfButtons() {
         iframe.src = 'https://video.sibnet.ru/shell.php?videoid=4047529'
         episodeName.textContent = 'Название серии: I Came to Carry Out My Promise!'
         episodeOutDate.textContent = 'Дата выхода: 23.03.2012'
-    }
 }
 
     //Сброс цвета на #2C2F33
