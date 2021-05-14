@@ -119,6 +119,12 @@ h4 {
     margin: auto;
     font-size: 25px;
 }
+.social-networks {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
 .fab.fa-youtube-square {
     margin: auto;
     padding-right: 5px;
