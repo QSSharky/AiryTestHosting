@@ -1,3 +1,2 @@
-# Anime-Site
-An Russian Anime-Site!
+# Anime-Dream
 Просто сайт для просмотра аниме, с Русскими субтитрами!
