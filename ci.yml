@@ -2,17 +2,17 @@ name: CI
 
 on:
   push:
-    brances: [ master ]
+    brances: master
 
   workflow_dispatch:
 
 jobs:
   display:
-    runs-on: ubuntu-latest
-    env:
-      DISCORD_TOKEN: NzkxMTA1NTQwMzUxOTgzNjI2.X-KUcg.8EGLw_SiGqNOJZlcd8niE_xE2K4
-  
-  steps:
-    name: Отображение персонализированной переменной.
-    run: |
-      echo "Токен успешно загружен: $DISCORD_TOKEN"
+    build-and-deploy:
+      runs-on: ubuntu-latest
+      steps:
+        name: Отображение персонализированной переменной.
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+        run: |
+          echo "Токен успешно загружен: $DISCORD_TOKEN"
