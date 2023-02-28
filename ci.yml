@@ -8,7 +8,7 @@ on:
 
 jobs:
   display:
-    runs-on: ubunty-latest
+    runs-on: ubuntu-latest
     env:
       DISCORD_TOKEN: NzkxMTA1NTQwMzUxOTgzNjI2.X-KUcg.8EGLw_SiGqNOJZlcd8niE_xE2K4
   
