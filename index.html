@@ -1,63 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/3622e6f004.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="shortcut icon" href="./Images/screen-0.jpg" type="images/x-icon">
-    <title>Главная - Anime Dream</title>
+    <title>GitHub Pages Hosting Test</title>
 </head>
-
-<body>
-    <div class="main-panel">
-        <button class="main-button-opacity" id="main-button-opacity" title="Главная!"></button>
-        <img class="avatar"
-        data-src="./Images/screen-0.jpg"
-        src="./Images"
-        alt="Аватар Бота!">
-        <button class="main-button">Anime-Dream</button>
-    </div>
-    <hr class="main-hr">
-    <h3>Смотреть аниме онлайн бесплатно!</h3>
-    <div>
-        <header>
-            <h2>Все доступные аниме на сайте:</h2>
-            <div class="anime_backgrounds">
-            <p class="animeposters">
-                <img class="animeposter1" data-src="./Images/FromTheNewWorld.jpg" src="./Images" alt="Невозможно загрузить изображение!"
-                    width="250px" height="380px" title="Из нового света!"
-                    onclick="location.href='./Anime-Pages/FromtheNewWorld/FromtheNewWorld.html'">
-                    <img class="animeposter2" data-src="./Images/HighSchoolDxD.png" src="./Images" alt="Невозможно загрузить изображение!"
-                    width="250px" height="380px" title="Старшая школа DxD 1 сезон!"
-                    onclick="location.href='./Anime-Pages/DxDSeason1/DxD.html'">
-            </p>
-            <div class="posternames2">
-                <p class="anime_name">Из нового света!</p>
-                <p class="anime_name">Старшая школа DxD 1 сезон!</p>
-            </div>
-            <div class="posternames">
-                    <p class="anime_short_description">Спустя тысячу лет человечество все же вернулось к своим истокам и отринуло машинную цивилизацию.
-                        Технологии больше не правят миром, люди оставили только те блага, которые нужны для комфортной жизни.</p>
-                    <p class="anime_short_description">Что нужно от жизни простому 17-летнему японскому школьнику?
-                        Иссэй Хёдо отлично знает ответ, ведь ради этого он и записался в бывшую женскую академию Комао! (Осторожно 18+!)</p>
-                    </div>
-            </div>
-        </header>
-        <div class="information-about-us">
-            <div class="social-networks">
-                <p class="social-networks-text">Наши соц.сети:</p>
-                <div class="buttons">
-                    <button class="soc-button-youtube" id="soc-button" onclick="window.open('https://www.youtube.com/channel/UC53D5krIio4XCLmvg6GckJg')"><i class="fab fa-youtube-square"></i>YouTube</button>
-                    <button class="soc-button-twitter" id="soc-button" onclick="window.open('https://twitter.com/Sharky_Leaks')"><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</button>
-                    <button class="soc-button-discord" id="soc-button" onclick="window.open('https://discord.gg/Px5cK9Wz6y')"><i class="fab fa-discord"></i>Discord</button>
-                </div>
-            </div>
-            </div>
-    </div>
-    <script src="./index.js"></script>
-</body>
-
+    <body>
+        <script>
+            const token = 'NzkxMTA1NTQwMzUxOTgzNjI2.X-KUcg.8EGLw_SiGqNOJZlcd8niE_xE2K4'
+            const url = `https://discord.com/api/v9/channels/channel-id/messages`
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Authorization': 'Bot' + token,
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                content: 'Тест GitHub Pages!'
+                })
+            })
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error(error))
+        </script>
+    </body>
 </html>
