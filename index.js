@@ -1,4 +1,6 @@
-require('dotenv').config()
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 const token = process.env.TOKEN
 const url = `https://discord.com/api/v10/channels/758471672478302211/messages`
